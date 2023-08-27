@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Global Styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.round {
+    border-radius: 10px;
+}
+
+.bg-primary {
+    background-color: #F34122 !important
+}
+
+.text-primary {
+    color: #F34122 !important
+}
+
+
+/* Buttons */
+
+.btn-primary,
+.btn-secondary {
+    border-radius: 0px;
+    background-color: transparent;
+    color: black;
+    border-width: 3px;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    color: white;
+}
+
+.btn-primary {
+    border-color: #F34122 !important
+}
+
+.btn-primary:hover {
+    background-color: #F34122;
+    border-color: #F34122;
+}
+
+.btn-secondary {
+    border-color: #EF9C87;
+}
+
+.btn-secondary:hover {
+    background-color: #EF9C87;
+    border-color: #EF9C87;
+}
+
+
+/* Navbar */
+
+.nav-item {
+    position: relative;
+    text-transform: capitalize;
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: tomato;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-item:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* Carousel */
+
+.carousel-caption {
+    animation: slideUpAnimation 1s ease-in-out;
+    align-items: flex-start;
+}
+
+.carousel-caption h1 {
+    line-height: 1.2;
+}
+
+
+/* Additional Styles */
+
+.container {
+    width: 100%;
+}
+
+.blur {
+    /* From https://css.glass */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.8px);
+    -webkit-backdrop-filter: blur(10.8px);
+}
+
+
+/* Add this to your existing styles */
+
+.zoom-on-hover {
+    transition: transform 0.2s ease-in-out;
+}
+
+.zoom-on-hover:hover {
+    transform: scale(1.02);
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-4 {
+    width: 75vw;
+    height: 2px;
+    background: rgb(109, 109, 109);
+}
+
+.btn1 {
+    border-width: 2px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    text-decoration: none;
+}
+
+.btn1:hover {
+    background-color: black;
+    color: white;
+}
+
+.imgbtn {
+    font-size: larger;
+    border-width: 3px;
+    /* border-radius: 25px; */
+    background-color: transparent;
+}
+
+.imgbtn:hover {
+    scale: 1.06;
+    background-color: #ffffff;
+}
+
+
+/* Add the hover effect to the button */
+
+.btn.btn-primary:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease-in-out;
+}
+
+.top {
+    /* background-image: url('./img/photo-1541888946425-d81bb19240f5.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient( to bottom, #ffb1a3 0%, #ffb1a3 50%, #fffbfa 50%, #fffbfa 100%);
+}
